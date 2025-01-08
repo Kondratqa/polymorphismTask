@@ -6,12 +6,14 @@ public abstract class Animal {
     protected String color;
     protected int age;
     protected double weight;
+    protected String sound;
 
-    public Animal(String name, String color, int age, double weight) {
+    public Animal(String name, String color, int age, double weight, String sound) {
         this.name = name;
         this.color = color;
         this.age = age;
         this.weight = weight;
+        this.sound = sound;
     }
 
     public String getName() {
@@ -30,6 +32,12 @@ public abstract class Animal {
         return weight;
     }
 
-    public void makeSound(){
+    public String getSound() {
+        return sound;
+    }
+
+    public void printAnimal(){
+        System.out.println(name + " " + sound + " Он " + color + " цвета" + " ему " + age + " года (лет), его вес " + weight + " кг ");
+
     }
 }
