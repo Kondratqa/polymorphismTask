@@ -37,7 +37,6 @@ public abstract class Animal {
     }
 
     public void printAnimal(){
-        System.out.println(name + " " + sound + " Он " + color + " цвета" + " ему " + age + " года (лет), его вес " + weight + " кг ");
-
+        System.out.println(name + "\t" + sound + " Он " + color + " цвета" + " ему " + age + " года (лет), его вес " + weight + " кг ");
     }
 }
